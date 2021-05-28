@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*
+{
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);  
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: #8ceced;
+    margin: 20px;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+}
+.container .top{
+    position: relative;
+    background: rgb(238, 174, 207);
+    padding: 40px;
+}
+.container .bottom{
+    position: relative;
+    background: aliceblue;
+    padding: 40px;
+}
+.picture{ 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-radius: 60px;
+    width: 25%;
+}
+.about{ 
+    font-size: 20px; 
+}
+.skills h5{ 
+    color: #4d4b4b;
+    font-weight: 600;
+}
+
+/* SOCIAL MEDIA ICONS */
+.icon ul{
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0;
+    margin: 0;
+    display: flex; 
+}
+.icon ul li{
+    list-style: none;
+    margin: 0 10px; 
+}
+ .icon ul li .fa { 
+    color: #000000;
+    font-size: 40px;
+    line-height: 50px;
+    transition: .5s;
+}
+  .icon ul li .fa :hover{
+    color: #ffffff;
+}
+ .icon ul li a { 
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    text-align: center;
+    transition: 0.5s;
+    transform: translate(0,0px);
+    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+}
+ ul li a:hover{ 
+    transform: rotate(0deg) skew(0deg) translate(0, -10px);
+}
+.icon ul li:nth-child(1) a:hover {
+    background-color: #e4405f;
+}
+.icon ul li:nth-child(2) a:hover{
+    background-color: #05ad27;
+}
+.icon ul li:nth-child(3) a:hover{ 
+    background-color: #0077B5;
+}
+.icon ul li:nth-child(4) a:hover{ 
+     background-color: #ffffff;
+}
+
+/*ipad pro */
+@media (max-width: 1000px) { 
+    .picture{ 
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        border-radius: 60px;
+        width: 20%;
+    }
+    .about { 
+        font-size: 15px; 
+    }
+}
+
+/* iphone */
+@media (max-width: 320px) { 
+    .picture{ 
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        border-radius: 60px;
+        width: 80%;
+    }
+    .about { 
+        font-size: 15px; 
+    }
+}
+
+/*ipad*/
+@media (max-width: 768px) { 
+    .picture{ 
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        border-radius: 60px;
+        width: 25%;
+    }
+    .about { 
+        font-size: 17px; 
+    }
+}
